@@ -21,21 +21,39 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+.coin {
+     position: relative;
+     transition: transform 2s;
+     transform: rotateY(0);
 }
 
+.coin > * {
+     position: absolute;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 200px;
+     height: 200px;
+     border-radius: 100%;
+     background: gray;
+     font-size: larger;
+}
+
+p {
+     text-align: center;
+}
+
+.head {
+     z-index: 1;
+}
+
+.tail {
+     z-index: 0;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
-}
-
-footer {
-
-}
 
 /******************************************
 /* ADDITIONAL STYLES
