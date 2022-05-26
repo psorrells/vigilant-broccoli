@@ -1,0 +1,28 @@
+{
+  "name": "coin-flip",
+  "version": "1.0.0",
+  "description": "'a server-side coin flipper'",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev-start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psorrells/vigilant-broccoli.git"
+  },
+  "author": "Pamela Sorrells",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psorrells/vigilant-broccoli/issues"
+  },
+  "homepage": "https://github.com/psorrells/vigilant-broccoli#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}
