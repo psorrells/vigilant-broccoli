@@ -1,12 +1,20 @@
 document.querySelector('button').addEventListener('click', flipCoin)
 
-
 async function flipCoin() {
     let flipping = true
 
-    let result = await fetch('localhost:5000/coinflip')
+    let result,data;
 
-    if (result === "heads") {
+    try {
+    data = await fetch('http://localhost:5000/coinflip', {
+        "method": "GET"
+    })
+    result = await data.json()
+    } catch(err) {
+        console.log(err)
+    }
+
+    if (result.message === "heads") {
         //flip coin to heads up
         flipping = false
         console.log('heads!')
